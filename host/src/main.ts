@@ -1,7 +1,8 @@
 // @ts-nocheck
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'remoteApp/App';
+import PeopleApp from 'peopleApp/App';
+import ProductApp from 'productApp/App';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -9,6 +10,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `;
 
-const root = ReactDOM.createRoot(document.querySelector<HTMLDivElement>('#people-app'));
-root.render(React.createElement(App));
+const peopleRoot = ReactDOM.createRoot(document.querySelector<HTMLDivElement>('#people-app'));
+peopleRoot.render(React.createElement(PeopleApp));
+
+const productRoot = ReactDOM.createRoot(document.querySelector<HTMLDivElement>('#product-app'));
+productRoot.render(React.createElement(ProductApp));
 // @ts-check

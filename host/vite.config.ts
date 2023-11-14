@@ -7,7 +7,8 @@ export default defineConfig({
     federation({
       name: "app",
       remotes: {
-        remoteApp: "http://localhost:5001/assets/remoteEntry.js"
+        peopleApp: "http://localhost:5001/assets/remoteEntry.js",
+        productApp: "http://localhost:5002/assets/remoteEntry.js"
       },
     })
   ],
