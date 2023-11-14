@@ -1,5 +1,4 @@
 import PeopleList from './components/PeopleList'
-// import ProductList from './components/ProductList'
 import './App.css'
 
 function App() {
@@ -8,7 +7,6 @@ function App() {
   return (
     <>
       <PeopleList numberOfRowsToRender={numberOfRowsToRender} />
-      {/* <ProductList numberOfRowsToRender={numberOfRowsToRender} /> */}
     </>
   )
 }
