@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PeopleApp from 'peopleApp/App';
@@ -15,4 +14,3 @@ peopleRoot.render(React.createElement(PeopleApp));
 
 const productRoot = ReactDOM.createRoot(document.querySelector<HTMLDivElement>('#product-app'));
 productRoot.render(React.createElement(ProductApp));
-// @ts-check
